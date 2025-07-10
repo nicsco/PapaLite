@@ -100,7 +100,7 @@ console.log(result);
 
 #### 🔹 Custom Newline Character
 
-````js
+```js
 const csv = "a;b\r\n1;2\r\n3;4";
 const { result } = PapaLite.parse(csv, {
   delimiter: ";",
@@ -113,7 +113,7 @@ console.log(result);
 //   ["1", "2"],
 //   ["3", "4"]
 // ]
-
+```
 
 ### 🔁 Unparsing (Object or Array to CSV)
 
@@ -131,7 +131,7 @@ console.log(result);
 // name,age
 // Alice,30
 // Bob,25
-````
+```
 
 #### Array of Arrays
 
