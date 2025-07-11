@@ -6,6 +6,25 @@ This version strips away advanced features like streaming or Node.js-specific co
 
 &nbsp;
 
+## 🚀 Feature Summary
+
+| Feature                          | Supported  |
+| -------------------------------- | ---------- |
+| 🆕 Modular ES6 importable API    | ✅ NEW!    |
+| 🆕 Custom newline (`\n`, `\r\n`) | ✅ NEW!    |
+| Parse CSV string                 | ✅         |
+| Unparse to CSV                   | ✅         |
+| Custom delimiter                 | ✅         |
+| Header row mapping               | ✅         |
+| Dynamic typing                   | ✅         |
+| Skip empty lines                 | ✅         |
+| Error reporting                  | ✅         |
+| Node.js support                  | ❌ removed |
+| Web workers                      | ❌ removed |
+| Streaming/chunking               | ❌ removed |
+
+&nbsp;
+
 ## 📦 Install
 
 Since **PapaLite** is a standalone ES module, you can simply clone and import `papa-lite.js` into your project:
@@ -17,25 +36,6 @@ import { PapaLite } from './papa-lite.js';
 ```
 
 💡 **HINT**: For production, use the minified version (`papa-lite.min.js`) to reduce file size and improve load time.
-
-&nbsp;
-
-## 🚀 Feature Summary
-
-| Feature                          | Supported |
-| -------------------------------- | --------- |
-| 🆕 Modular ES6 importable API    | ✅ NEW!   |
-| 🆕 Custom newline (`\n`, `\r\n`) | ✅ NEW!   |
-| Parse CSV string                 | ✅        |
-| Unparse to CSV                   | ✅        |
-| Custom delimiter                 | ✅        |
-| Header row mapping               | ✅        |
-| Dynamic typing                   | ✅        |
-| Skip empty lines                 | ✅        |
-| Error reporting                  | ✅        |
-| Node.js support                  | ❌        |
-| Web workers                      | ❌        |
-| Streaming/chunking               | ❌        |
 
 &nbsp;
 
