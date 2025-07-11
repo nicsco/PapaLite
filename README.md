@@ -4,6 +4,8 @@
 
 This version strips away advanced features like streaming or Node.js-specific code, while retaining the core functionality needed for in-browser CSV handling.
 
+&nbsp;
+
 ## 📦 Install
 
 Since **PapaLite** is a standalone ES module, you can simply clone and import `papa-lite.js` into your project:
@@ -11,10 +13,12 @@ Since **PapaLite** is a standalone ES module, you can simply clone and import `p
 ```js
 import { PapaLite } from './papa-lite.js';
 
-// add your code here!
+// you can now use PapaLite in your code, see examples below!
 ```
 
 💡 **HINT**: For production, use the minified version (`papa-lite.min.js`) to reduce file size and improve load time.
+
+&nbsp;
 
 ## 🚀 Feature Summary
 
@@ -32,6 +36,8 @@ import { PapaLite } from './papa-lite.js';
 | Node.js support                  | ❌        |
 | Web workers                      | ❌        |
 | Streaming/chunking               | ❌        |
+
+&nbsp;
 
 ## 🧪 Usage Examples
 
@@ -147,6 +153,8 @@ console.log(result);
 // 1,2,3
 ```
 
+&nbsp;
+
 ## ⚠️ Error Handling
 
 **All results return an object:**
@@ -169,9 +177,13 @@ console.log(result);
 }
 ```
 
+&nbsp;
+
 ## 📘 License
 
 MIT License. Based on PapaParse by @mholt.
+
+&nbsp;
 
 ## ❤️ Credits
 
