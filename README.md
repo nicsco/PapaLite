@@ -2,48 +2,47 @@
 
 **PapaLite** is a lightweight, modular version of the excellent [PapaParse](https://github.com/mholt/PapaParse) library for parsing and generating CSV in JavaScript.
 
-This version strips away advanced features like streaming or Node.js-specific code, while retaining the core functionality needed for in-browser CSV handling.
+**Why**? I needed a lightweight JavaScript library that could function standalone or be **loaded as a module**. PapaParse is a great option, but it lacks these features.
 
 &nbsp;
 
-## 🚀 Feature Summary
+## Feature Summary
 
-| Feature                          | Supported  |
-| -------------------------------- | ---------- |
-| 🆕 Modular ES6 importable API    | ✅ NEW!    |
-| 🆕 Custom newline (`\n`, `\r\n`) | ✅ NEW!    |
-| Parse CSV string                 | ✅         |
-| Unparse to CSV                   | ✅         |
-| Custom delimiter                 | ✅         |
-| Header row mapping               | ✅         |
-| Dynamic typing                   | ✅         |
-| Skip empty lines                 | ✅         |
-| Error reporting                  | ✅         |
-| Node.js support                  | ❌ removed |
-| Web workers                      | ❌ removed |
-| Streaming/chunking               | ❌ removed |
+| Feature                       | Supported                 |
+| ----------------------------- | ------------------------- |
+| Modular ES6 importable API    | ✅ new (not in PapaParse) |
+| Custom newline (`\n`, `\r\n`) | ✅ new                    |
+| Parse CSV string              | ✅                        |
+| Unparse to CSV                | ✅                        |
+| Custom delimiter              | ✅                        |
+| Header row mapping            | ✅                        |
+| Dynamic typing                | ✅                        |
+| Skip empty lines              | ✅                        |
+| Error reporting               | ✅                        |
+| Node.js support               | ❌ removed                |
+| Web workers                   | ❌ removed                |
+| Streaming/chunking            | ❌ removed                |
 
 &nbsp;
 
-## 📦 Install
+## Install
 
 Since **PapaLite** is a standalone ES module, you can simply clone and import `papa-lite.js` into your project:
 
 ```js
 import { PapaLite } from './papa-lite.js';
 
-// you can now use PapaLite in your code, see examples below!
+// You can now use PapaLite in your code, see examples below!
+// For production, use the minified version `papa-lite.min.js` to reduce file size and improve load time.
 ```
-
-💡 **HINT**: For production, use the minified version (`papa-lite.min.js`) to reduce file size and improve load time.
 
 &nbsp;
 
-## 🧪 Usage Examples
+## Usage Examples
 
-### 🔁 Parsing CSV -> JSON
+### Parsing CSV -> JSON
 
-#### 🔹 Basic Parsing
+#### Basic Parsing
 
 Default Settings: { header: false, dynamicTyping: false }
 
@@ -59,7 +58,7 @@ console.log(result);
 // ]
 ```
 
-#### 🔹 Header Row Support
+#### Header Row Support
 
 ```js
 const csv = "name,age\nAlice,30\nBob,25";
@@ -72,7 +71,7 @@ console.log(result);
 // ]
 ```
 
-#### 🔹 Dynamic Typing
+#### Dynamic Typing
 
 ```js
 const csv = "value,bool\n42,true\n7,false";
@@ -88,7 +87,7 @@ console.log(result);
 // ]
 ```
 
-#### 🔹 Skipping Empty Lines
+#### Skipping Empty Lines
 
 ```js
 const csv = "a,b\n1,2\n\n3,4";
@@ -104,7 +103,7 @@ console.log(result);
 // ]
 ```
 
-#### 🔹 Custom Newline Character
+#### Custom Newline Character
 
 ```js
 const csv = "a;b\r\n1;2\r\n3;4";
@@ -121,7 +120,7 @@ console.log(result);
 // ]
 ```
 
-### 🔁 Unparsing (Object or Array to CSV)
+### Unparsing (Object or Array to CSV)
 
 
 #### Object Array with Header
@@ -155,7 +154,7 @@ console.log(result);
 
 &nbsp;
 
-## ⚠️ Error Handling
+## Error Handling
 
 **All results return an object:**
 
@@ -179,12 +178,12 @@ console.log(result);
 
 &nbsp;
 
-## 📘 License
+## License
 
 MIT License. Based on PapaParse by @mholt.
 
 &nbsp;
 
-## ❤️ Credits
+## Credits
 
 PapaLite is a fork of PapaParse, ideal for browser-only apps where size and simplicity matter more than streaming or large-scale performance.
